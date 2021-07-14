@@ -1,9 +1,35 @@
+/* To test if CSS works */
 h1 {
   color:red;
 }
+
+/*
+
+  Welcome to Standard CSS used for Nyp Astronomy webpage
+  Here will be every CSS used for all Astronomy webpages
+  I. Structure of Standard.css
+  |
+  ├─ 1.Global
+  ├─ 2.NavBar
+  ├─ 3.Footer
+
+*/
+
+/* --------------------------------------------------------------------------
+    1.Global
+-------------------------------------------------------------------------- */
+
 * {
   background-color:#000000;
 }
-.global-container {
-    
-  }
+
+/* Ensure Smooth Scrolling of webpage */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  max-height: 100%;
+  scroll-behavior: smooth;
+}
