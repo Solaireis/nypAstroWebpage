@@ -84,6 +84,8 @@ li a{
 /* Main Title Caption */
 .MTC {
   font-size: 70px;
+  color:#FFF;
+  font-family:quicksand;
 }
 
 /* Main Subtitle Caption */

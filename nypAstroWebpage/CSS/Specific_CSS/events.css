@@ -1,0 +1,17 @@
+
+/* align table to centre */
+
+table.center{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* fix caption floating at the bottom */
+caption{
+  caption-side:top;
+}
+table{
+  border:collapse;
+  border:1px solid white;
+  table-padding-right:10px;
+}

@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact Us</title>
+  <title>Funfact Highlights</title>
 
   <!-- Standard CSS -->
   <link rel="stylesheet" href="../CSS/Standard_CSS/Standard.css">
 
-  <!-- contact us CSS -->
-  <link rel="stylesheet" href="../CSS/Specific_CSS/contactUs.css">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../CSS/Bootstrap_CSS/bootstrap.css">
@@ -44,13 +43,13 @@
           <a class="nav-link" href="spaceMap.html">Space Map</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="funfacts.html">Fun Facts</a>
+          <a class="nav-link  active" href="funfacts.html">Fun Facts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="timeMachine.html">Time Machine</a>
         </li>
         <li class="nav-item  " >
-          <a class="nav-link active" href="contactUs.html">Contact Us</a>
+          <a class="nav-link " href="contactUs.html">Contact Us</a>
         </li>
       </ul>
 
@@ -72,124 +71,22 @@
       <!-- Banner -->
       <div class="row">
         <div class="col-lg-12">
-          <img src="../Multimedia/images/contactUsBanner2.png" alt=""  class="imgbanner" />
+          <img src="../Multimedia/images/funfactshighlights.gif" alt="Fun Facts Banner"  class="imgbanner" />
         </div>
       </div>
         <br/>
         <br/>
         <br/>
 
-        <!-- Social Media Info -->
-        <div class="row pageAlign" >
+        <div class="row">
           <div class="col-lg-12">
-            <p class="MSC">Follow Us here!</p>
-            <hr style="border:2px solid #FFF"/>
-          </div>
-        </div>
-        <div class="row pageAlign" >
-          <div class="col-lg-5">
-            <p class="SSC">Astronomy Instagram</p>
-            <a href="https://www.instagram.com/nypastro/" target="_blank" >
-              <img src="../Multimedia/images/Instagram.png" height="50%" width="55%" alt="Instagram" >
-              <br/>
-              <p class="TSC">Click here to see the various awesome events we have done so far!</p>
-          </a>
-          </div>
-
-          <!-- Blank Seperator -->
-          <div class="col-lg-2">
-
-          </div>
-          <div class="col-lg-5">
-            <p class="SSC">Astronomy Discord</p>
-            <a href="https://discord.gg/UABnsXq4">
-              <img src="../Multimedia/images/Discord2.png" height="50%" width="50%" alt="Discord" target="_blank">
-              <br/>
-              <p class="TSC">Join here to make friends, watch astronomical livestreams and get early access to what NYP Astro is up to</p>
-            </a>
-
+            <a href="#"><img src="../Multimedia/images/blueSun.png" alt="Mars sunset"  class="imgbanner" /></a>
           </div>
         </div>
           <br/>
           <br/>
           <br/>
 
-        <!-- Enquiry form -->
-        <div class="row pageAlign" >
-          <div class="col-lg-12">
-            <p class="MSC ">Enquiry</p>
-            <hr style="border:2px solid #FFF"/>
-            <br/>
-            <br/>
-          </div>
-
-        </div>
-        <div class="row" >
-          <div class="col-lg-6">
-            <p class="SSC">If you have any enquiries you may fill up this form.</p>
-            <p class="TSC"> Note: we will take about 3-5 business day to return a reply back to you.</p>
-          </div>
-
-          <div class="col-lg-6">
-            <!-- Enquiries Input Form-->
-            <form method="get" action="formsubmission.html">
-
-                <!-- name -->
-              <label for="username" class="SSC" >Name:</label><br/>
-              <input type="text" placeholder="John Doe" id="username" size="40px" required class="TSC" />
-              <br/>
-              <br/>
-
-              <!-- email -->
-              <label for="email" class="SSC" >Email:</label><br/>
-              <input type="email" placeholder="e.g. John_Doe@gmail.com" id="email" size="40px" requiredc class="TSC" />
-              <br/>
-              <br/>
-
-              <!--- Phone number
-              <label for="phone_num" class="SSC">Contact Number:</label><br/>
-              <input type="tel" id="phone_num"  name="contact" pattern="[0-9]{8}" required placeholder="e.g. 91234567" title="8 digits telephone number" size="40px"/>
-              <br/>
-              <br/>
-            -->
-
-              <!-- type of enquires-->
-              <label for="subject" class="SSC">Type of Enquiry:</label><br/>
-              <input list="enquries" name="enquries" id="subject" placeholder="Please select one" size="40px" required class="TSC">
-              <datalist id="enquries" />
-                  <option value="Feedback on Website" />
-                  <option value="Questions about Astronomy Club" />
-                  <option value="Copyright disputes about the website" />
-                  <option value="Inaccuracy of Content" />
-                  <option value="Others" />
-              </datalist>
-              <br/>
-              <br/>
-
-              <!--
-               method of communication prototype
-                <p class="SSC">Perferred mode of communication:</p>
-                <p class="TSC">(Please select one)</p>
-                <input type="radio" id="sms" name="communication" value="sms" required />
-                <label for="sms" class="TSC">SMS</label>
-                <br/>
-                <input type="radio" id="email" name="communication" value="email" required />
-                <label for="email" class="TSC">Email</label>
-                <br/>
-                <input type="radio" id="phonecall" name="communication" value="phonecall" required />
-                <label for="phonecall" class="TSC">Telephone Call</label>
-                <br/>
-                -->
-
-                <!-- Message -->
-                <label for="message" class="SSC">Leave your messages here:</label>
-                <textarea id="message" rows="6" cols="40" size="40px" placeholder="Write your message here" required class="TSC"></textarea>
-                <br/>
-                <br/>
-                <input type="submit" class="button1" Value="Submit"/>&nbsp;<input type="reset" class="button1" value="Clear"/>
-            </form>
-          </div>
-        </div>
       </div>
       <br/>
       <br/>
