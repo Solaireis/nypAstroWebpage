@@ -17,9 +17,9 @@
     1.Global
 -------------------------------------------------------------------------- */
 
-
-* {
-  background-color:#000000;
+/* ensure selected div containers have black background, overrides bootstrap */
+div.background {
+  background-color:#000000 !important;
 }
 
 
@@ -44,6 +44,7 @@ body {
   height:100%;
 }
 
+/* aligns pages */
 .pageAlign{
   text-align: center;
 }
@@ -76,9 +77,9 @@ body {
 
 /* Sets footer links all grey */
 
-li a{
+footer li a{
   color:grey;
-  text-decoration: none;
+  text-decoration: none ;
 }
 
 /* Main Title Caption */
@@ -113,14 +114,36 @@ li a{
     3.Navbar
 -------------------------------------------------------------------------- */
 
-/* modification to Navbar pill active colour */
+/* Modification to Navbar pill active colour */
 .astro-pills .nav-link {
     background: none;
     border: 0;
-    border-radius: 0.50rem;
+    border-radius: 0.50em;
   }
 .astro-pills .nav-link.active,
 .astro-pills .show > .nav-link {
     color: #db3a49;
     background-color: #10113f;
 }
+
+/* button for navbar */
+button.searchbutton{
+  color:#db3a49;
+  border-radius:0.50em;
+  border:1px solid #db3a49;
+  background-color:rgba(0,0,0,0.0);
+  padding:10px;
+
+}
+button.searchbuttonhover:hover{
+  color:#FFF;
+  background-color:#db3a49;
+  border-radius:0.50em;
+  border:none;
+  padding:10px;
+}
+
+
+/* --------------------------------------------------------------------------
+    3.Navbar testing
+-------------------------------------------------------------------------- */

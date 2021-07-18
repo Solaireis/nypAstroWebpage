@@ -4,26 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NYP Astronomy</title>
+  <title>About Us</title>
 
   <!-- Standard CSS -->
   <link rel="stylesheet" href="../CSS/Standard_CSS/Standard.css">
 
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../CSS/Bootstrap_CSS/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-  <!-- Bootstrap Javascript-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Standard JS -->
+  <script type="text/javascript" src="../JavaScript/Standard_JS/standard.js">
+  </script>
+  <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
+  <!-- site-navbar start -->
+    <div class="navbar-area">
+      <div class="container">
+        <nav class="site-navbar">
+          <!-- site logo -->
+          <a href="#home" class="site-logo">logo</a>
 
+          <!-- site menu/nav -->
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+
+          <!-- nav-toggler for mobile version only -->
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </div><!-- navbar-area end -->
+
+    
 <div class="background">
  <!-- Bootstrap Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="home.html"><img src="../Multimedia/images/nypAstroLogo.png" alt="NyP Astro" height="50px" width="60px" ></a>  <!-- NYP Astro Logo-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +57,12 @@
     <div class="collapse navbar-collapse" id="navbarText">
 
       <!-- Left side of Navbar-->
-      <ul class="navbar-nav astro-pills me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto astro-pills mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="aboutUs.html"> About Us</a>
+          <a class="nav-link active" aria-current="page" href="#"> About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Space Map</a>
+          <a class="nav-link" href="spaceMap.html">Space Map</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="funfacts.html">Fun Facts</a>
@@ -54,6 +79,7 @@
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="searchbutton searchbuttonhover" type="submit">Search</button>
       </form>
 
     </div>
@@ -65,90 +91,44 @@
 
       <!-- highlights -->
       <div class="row">
-        <div class="col-lg-12 MTC pageAlign">
-          <p>Space Map</p>
+        <div class="col-lg-12 MSC pageAlign">
+          <p>About Us</p>
         </div>
       </div>
       <br/>
       <br/>
       <br/>
 
-
-      <!-- Space Map Grid 1-->
       <div class="row">
-        <div class="col-lg-3 SSC pageAlign">
-          <p>1</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>Welcome Session</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>3</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>4</p>
+        <div class="col-lg-12  pageAlign">
+          <p class="SSC">Background of Astronomy Club</p>
+          <img src="../Multimedia/images/nypAstroLogo.png" alt="">
+          <p class="TSC"> Est. 1994, Astronomy Club brings people from all walks to share their passion about Astronomy.</p>
+          <p class="TSC"> In the past we host multiple outreach programmes with multiple secondary schools and also competitions.</p>
+          <p class="TSC"> We also hosted overseas trip to batam, to have a better view of the night sky. </p>
+
+          <p class="TSC"> </p>
         </div>
       </div>
       <br/>
       <br/>
       <br/>
 
-      <!-- Space Map Grid 2-->
       <div class="row">
-        <div class="col-lg-3 SSC pageAlign">
-          <p>1</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>2</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>3</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>4</p>
+        <div class="col-lg-12  pageAlign">
+          <p class="SSC">Meaning of ASTro</p>
+          <p class="TSC"> ASTro stands for Art Science and Technology</p>
+          <p class="TSC"> Astronomy sessions encompasses Art in the use of our slides, Science in the explanation of astronomical events</p>
+          <p class="TSC">(i.e. Types of Stars, Life of a Star, Blackholes) </p>
         </div>
       </div>
       <br/>
       <br/>
       <br/>
 
-      <!-- Space Map Grid 3-->
-      <div class="row">
-        <div class="col-lg-3 SSC pageAlign">
-          <p>1</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>2</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>3</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>4</p>
-        </div>
-      </div>
-      <br/>
-      <br/>
-      <br/>
 
-      <!-- Space Map Grid 4-->
-      <div class="row">
-        <div class="col-lg-3 SSC pageAlign">
-          <p>1</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>2</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>3</p>
-        </div>
-        <div class="col-lg-3 SSC pageAlign">
-          <p>4</p>
-        </div>
-      </div>
-      <br/>
-      <br/>
-      <br/>
+
+
     </div>
     <br/>
     <br/>
@@ -157,7 +137,9 @@
 
 
     <!-- Footer -->
-      <footer class="footer-section text-white" >
+      <footer class="footer-section text-white bg-dark" >
+        <br/>
+        <br/>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -257,6 +239,8 @@
                 </div>
             </div>
         </div>
+        <br/>
+        <br/>
     </footer>
 </div>
 </body>
