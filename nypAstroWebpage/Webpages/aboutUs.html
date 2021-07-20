@@ -13,6 +13,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../CSS/Bootstrap_CSS/bootstrap.css">
 
+  <!-- Standard JS -->
+  <script src="../JavaScript/Standard_JS/standard.js" charset="utf-8"></script>
 
   <!-- Bootstrap Javascript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -21,10 +23,10 @@
 </head>
 <body>
 
-<div class="background">
+<div class="background" id="top">
  <!-- Bootstrap Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixedNBar">
-  <div class="container-fluid">
+  <div class="container-fluid NSC">
     <a class="navbar-brand" href="home.html"><img src="../Multimedia/images/nypAstroLogo.png" alt="NyP Astro" height="50px" width="60px" ></a>  <!-- NYP Astro Logo-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,7 +37,7 @@
       <!-- Left side of Navbar-->
       <ul class="navbar-nav me-auto astro-pills mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"> About Us</a>
+          <a class="nav-link active" aria-current="page" href="aboutUs.html"> About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="spaceMap.html">Space Map</a>
@@ -60,128 +62,165 @@
     </div>
   </div>
 </nav>
-    <div class="sepPadding3">
+    <!-- spacer from navbar and content -->
+    <div class="sepPaddingNbar"></div>
+    <!-- back to top -->
+    <button id="GBTT" onclick="topFunction()"> ^ </button>
+    <script>window.onscroll = function() {scrollFunction()};</script>
+    <script>topFunction();</script>
 
-    </div>
     <!-- Content comes here! -->
-    <div class="container">
+    <div class="container sepPadding2  ">
 
-      <!-- highlights -->
-      <div class="row sepPadding">
-        <div class="col-lg-12 MSC pageAlign ">
-          <p>About Us</p>
+      <!--Container Card-->
+      <div class="containerCard">
+        <!-- highlights -->
+        <div class="row sepPadding">
+          <div class="col-lg-12 MSC pageAlign ">
+            <h1 class="MTC"> About Us</h1>
+          </div>
+        </div>
+
+
+        <!-- Background of Astronomy Club-->
+        <div class="row sepPadding3">
+          <div class="col-lg-12  pageAlign">
+            <p class="MSC">Background of Astronomy Club</p>
+            <img src="../Multimedia/images/nypAstroLogo.png" alt="NYP Astro Logo" class="imgbanner2">
+            <p class="TSC"> Est. 1994, Astronomy Club brings people from all walks to share their passion about Astronomy.</p>
+            <p class="TSC"> In the past, we host multiple outreach programmes with multiple secondary schools and also competitions.</p>
+            <p class="TSC"> We also hosted overseas trip to places such as batam, where we shot beautiful Astrophotography in the nightsky. </p>
+            <br/>
+            <p class="SSC2">What Can You Expect as a Member?</p>
+            <img src="../Multimedia/images/solarEclipse.jpeg" alt="Solar Eclipse" class="imgbanner2">
+            <p class="TSC"> Watch a meteor shower, launch a (water) rocket, enjoy a live-stream session of Kerbal Space Program,</p>
+            <p class="TSC">paint with light, take a trip through our curated space map  events</p>
+            <p class="TSC">— or even introduce the club to something entirely new!</p>
+          </div>
         </div>
       </div>
 
+        <!-- Behind the name-->
+        <!--Container Card-->
+      <div class="containerCard">
+        <div class="row sepPadding2">
+          <div class="col-lg-12  pageAlign">
+            <p class="MSC">Meaning of ASTro</p>
+          </div>
+        </div>
 
-      <!-- Background of Astronomy Club-->
-      <div class="row sepPadding">
-        <div class="col-lg-12  pageAlign">
-          <p class="MSC">Background of Astronomy Club</p>
-          <img src="../Multimedia/images/nypAstroLogo.png" alt="">
-          <p class="TSC"> Est. 1994, Astronomy Club brings people from all walks to share their passion about Astronomy.</p>
-          <p class="TSC"> In the past we host multiple outreach programmes with multiple secondary schools and also competitions.</p>
-          <p class="TSC"> We also hosted overseas trip to batam, to have a better view of the night sky. </p>
-        </div>
-      </div>
+        <!-- icons -->
+        <div class="row sepPadding">
+          <div class="col-lg-4  pageAlign">
+            <img src="../Multimedia/icons/Education/svg/007-paint palette.svg" alt="Art" class="iconbanner" />
+            <p class="MSC">Art</p>
+          </div>
+          <div class="col-lg-4  pageAlign">
+            <img src="../Multimedia/icons/Education/svg/002-atom.svg" alt="Science" class="iconbanner" />
+            <p class="MSC">Science</p>
 
-
-      <!-- Behind the name-->
-      <div class="row sepPadding2">
-        <div class="col-lg-12  pageAlign">
-          <p class="MSC">Meaning of ASTro</p>
-          <p class="SSC"> ASTro stands for Art Science and Technology</p>
+          </div>
+          <div class="col-lg-4  pageAlign">
+            <img src="../Multimedia/icons/Art/svg/010-vr-glasses.svg" alt="Technology" class="iconbanner" />
+            <p class="MSC">Technology</p>
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4  pageAlign">
-          <p class="MSC">Art</p>
-
-        </div>
-        <div class="col-lg-4  pageAlign">
-          <p class="MSC">Science</p>
-
-        </div>
-        <div class="col-lg-4  pageAlign">
-          <p class="MSC">Technology</p>
-
-        </div>
-      </div>
-      <br/>
-      <br/>
-      <br/>
-
-      <!-- Executive Committee-->
-      <div class="row sepPadding2">
-        <div class="col-lg-12  pageAlign">
-          <p class="MSC">Our Committee members</p>
-        </div>
-      </div>
-      <br/>
-
-      <!-- Executive members -->
-      <div class="row sepPadding">
-        <div class="col-lg-12  pageAlign">
-          <p class="MSC">Eden</p>
-          <p class="SSC">President</p>
-        </div>
-      </div>
-
-
-      <div class="row sepPadding">
-        <div class="col-lg-6  pageAlign">
-          <p class="MSC">Reenikka</p>
-          <p class="SSC">Vice-President</p>
-        </div>
-        <div class="col-lg-6  pageAlign">
-          <p class="MSC">Devansh</p>
-          <p class="SSC">Social Media Manager, Secretary,</p>
-          <p class="SSC"> Treasurer, &amp; Quartermaster</p>
-        </div>
-      </div>
-
-
-      <!-- Subcommittee members -->
-      <div class="row sepPadding">
-        <div class="col-lg-4  pageAlign">
-          <p class="MSC">Natalia</p>
-          <p class="SSC">Subcommittee</p>
-        </div>
-        <div class="col-lg-4  pageAlign">
-          <p class="MSC">Brian</p>
-          <p class="SSC">Subcommittee</p>
-        </div>
-        <div class="col-lg-4  pageAlign">
-          <p class="MSC">Jovan</p>
-          <p class="SSC">Subcommittee</p>
-        </div>
-      </div>
-
-      <div class="row sepPadding">
-        <div class="col-lg-3  pageAlign">
-          <p class="MSC">Jeshvanth</p>
-          <p class="SSC">Subcommittee</p>
-        </div>
-        <div class="col-lg-3  pageAlign">
-          <p class="MSC">Benedict</p>
-          <p class="SSC">Subcommittee</p>
-        </div>
-        <div class="col-lg-3  pageAlign">
-          <p class="MSC">Keysha</p>
-          <p class="SSC">Subcommittee</p>
-        </div>
-        <div class="col-lg-3  pageAlign">
-          <p class="MSC">Isanne</p>
-          <p class="SSC">Subcommittee</p>
+        <div class="row sepPadding2">
+          <div class="col-lg-12  pageAlign">
+            <p class="TSC"> We called our club ASTro, as Astronomy is at the intersection of many domains; Art, Science, and Technology. </p>
+            <p class="TSC"> In each event we hold, we cover the various, Arts &amp; Culture, Sciences involved, and the Technology used to get there. </p>
+          </div>
         </div>
 
       </div>
 
+        <!-- Executive Committee-->
+        <div class="containerCard">
+        <div class="row ">
+          <div class="col-lg-12  pageAlign">
+            <p class="MSC">Our Committee members</p>
+          </div>
+        </div>
+        <br/>
+
+        <!-- Executive members -->
+        <div class="row sepPadding">
+          <div class="col-lg-12  pageAlign">
+            <p class="MSC">Eden</p>
+            <p class="SSC">President</p>
+          </div>
+        </div>
+
+
+        <div class="row sepPadding">
+          <div class="col-lg-6  pageAlign">
+            <p class="MSC">Reenikka</p>
+            <p class="SSC">Vice-President</p>
+          </div>
+          <div class="col-lg-6  pageAlign">
+            <p class="MSC">Devansh</p>
+            <p class="SSC">Social Media Manager, Secretary,</p>
+            <p class="SSC"> Treasurer, &amp; Quartermaster</p>
+          </div>
+        </div>
+
+
+        <!-- Subcommittee members -->
+        <div class="row sepPadding">
+          <div class="col-lg-4  pageAlign">
+            <p class="MSC">Natalia</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+          <div class="col-lg-4  pageAlign">
+            <p class="MSC">Brian</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+          <div class="col-lg-4  pageAlign">
+            <p class="MSC">Jovan</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+        </div>
+
+        <div class="row sepPadding3">
+          <div class="col-lg-3  pageAlign">
+            <p class="MSC">Jeshvanth</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+          <div class="col-lg-3  pageAlign">
+            <p class="MSC">Benedict</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+          <div class="col-lg-3  pageAlign">
+            <p class="MSC">Keysha</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+          <div class="col-lg-3  pageAlign">
+            <p class="MSC">Isanne</p>
+            <p class="SSC">Subcommittee</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Telescopes -->
+        <!-- container Card-->
+      <div class="containerCard">
+        <div class="row sepPadding">
+          <div class="col-lg-12  pageAlign">
+            <p class="MSC">Our Telescopes</p>
+          </div>
+        </div>
+
+        <div class="row sepPadding2">
+          <div class="col-lg-6  pageAlign">
+            <p class="MSC">Scope 1</p>
+          </div>
+          <div class="col-lg-6  pageAlign">
+            <p class="MSC">Scope 1</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="sepPadding">
 
-    </div>
 
 
 
